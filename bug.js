@@ -1,0 +1,1 @@
+This bug occurs when using the `useEffect` hook in React Native with a dependency array that includes a function.  The function, even if it appears pure, might trigger re-renders unexpectedly if it's recreated on every render. This is because React compares references, not function content.
